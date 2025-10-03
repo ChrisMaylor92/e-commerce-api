@@ -272,7 +272,7 @@ const checkoutCart = (req, res) => {
 //Orders
 
 const getOrders = (req, res) => {
-
+    //unfinished
     //returns all orders with products_ordered list attached to each [{ order_id, total_items, total_price, date, user_id, products_ordered: [{product_1}, {product_2} ]}, ....]
     pool.query('SELECT * FROM orders', (error, results) => {
         if (error) {
@@ -284,7 +284,7 @@ const getOrders = (req, res) => {
 
 const getOrdersById = (req, res) => {
     //UNFINISHED
-    //only accessible by superuser
+
     //returns order with products ordered list attached { order_id, total_items, total_price, date, user_id, products_ordered: [{product_1}, {product_2} ]}
     pool.query('SELECT * FROM orders', (error, results) => {
         if (error) {

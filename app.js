@@ -115,7 +115,7 @@ app.delete('/carts/:product_id', ensureAuthenticated, db.removeProductFromCart)
 app.post('/carts/checkout', ensureAuthenticated, db.checkoutCart)
 
 
-app.get('/orders', db.getOrders)
+app.get('/orders', db.getOrders)//unfinished
 //get /orders/:id 
 //get /users/orders (logged in)
 
